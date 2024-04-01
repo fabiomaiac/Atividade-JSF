@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" type="text/css" href="_css/main.css" />
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel value="Nome: " />
+        <h:inputText value="#{pessoa.nome}" />
+        <br/>
+        <h:commandButton value="Cadastrar" action="#{pessoa.cadastrarNome}" />
+    </h:form>
+
+    <h2>Nomes cadastrados:</h2>
+    <h:outputText value="Nenhum nome cadastrado." rendered="#{empty pessoa.nomesCadastrados}" />
+    <ul>
+        <h:outputText value="#{pessoa.nomesCadastrados}" rendered="#{not empty pessoa.nomesCadastrados}" />
+    </ul>
+</h:body>
+</html>
