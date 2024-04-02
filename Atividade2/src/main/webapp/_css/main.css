@@ -1,0 +1,21 @@
+/* Estilo para os campos de entrada */
+h\\:inputText {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o botão de envio */
+h\\:commandButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilo para o texto do rótulo */
+h\\:outputLabel {
+    margin-right: 10px;
+}
